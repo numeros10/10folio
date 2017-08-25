@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+
+  10folio:
+    build: .
+    container_name: 10folio
+    volumes:
+      - ./10folio:/data
+      - /data/node_modules
+    ports:
+       - 3000:3000
